@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Portal</title>
-    <script src="form.js" defer></script>
+    <title>Job Application</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: darkcyan;
+            background-color: darkgoldenrod;
         }
         .container {
             width: 80%;
             margin: 0 auto;
             padding: 20px;
-            background-color:lightgreen;
+            background-color: lightcoral;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin-top: 50px;
@@ -44,19 +43,18 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Job Portal</h1>
-        <div class="job-listing">
-            <div class="job" id="software-engineer">
-                <div class="job-title">Software Engineer</div>
-                <div class="job-description">We are looking for a skilled software engineer to join our team.</div>
-            </div>
-            <div class="job" id="graphic-designer">
-                <div class="job-title">Graphic Designer</div>
-                <div class="job-description">We are seeking a talented graphic designer to create engaging designs.</div>
-            </div>
-            <!-- Add more job listings here -->
-        </div>
-    </div>
+    <h1>Job Application</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" name="resume"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
